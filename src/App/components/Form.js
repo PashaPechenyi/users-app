@@ -159,7 +159,6 @@ export default class Form extends Component {
           //меняем стиль кнопкам
           changeDisabledButton();
         } else {
-          console.log(data);
           this.setState({
             completedMessageText: `Error!    ${data.message}.`,
           });
@@ -252,7 +251,6 @@ export default class Form extends Component {
   // Управление классами при наведении и ошибке для input[type:file]
 
   addFileClass = (activeClass1, activeClass2) => {
-    console.log(this.fileInputRef.current);
     this.fileInputRef.current
       .closest(".formInputBlock")
       .querySelector(".formInputWrapper")

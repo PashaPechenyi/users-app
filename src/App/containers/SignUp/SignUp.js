@@ -3,7 +3,6 @@ import Form from "../../components/Form";
 import "./SignUp.scss";
 
 const SignUp = ({ reloadUsers, isDisabledButton, changeDisabledButton }) => {
-  console.log(isDisabledButton);
   return (
     <section className="signUp">
       <a name="signUp"></a>

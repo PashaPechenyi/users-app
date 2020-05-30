@@ -14,8 +14,6 @@ export default class UsersBlock extends Component {
 
   // функция перезагрузки пользователей при регистрации
   componentWillReceiveProps(nextProps) {
-    console.log(3);
-
     if (nextProps.isReloadUsers) {
       this.reloadUsers(nextProps);
     }
